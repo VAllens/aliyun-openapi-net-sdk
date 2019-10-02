@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp1.0;netcoreapp1.1;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0</TargetFrameworks>
     <AssemblyName>Aliyun.Acs.Push.OpenApi2</AssemblyName>
     <RootNamespace>Aliyun.Acs.Push</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -9,15 +9,15 @@
     <Authors>Aliyun Allen</Authors>
     <Company>Aliyun</Company>
     <Description>aliyun open api sdk for .net core</Description>
-    <Copyright>Copyright (c) 2017 Aliyun</Copyright>
-    <PackageLicenseUrl>https://github.com/VAllens/aliyun-openapi-sdk-net-core/blob/master/LICENSE.md</PackageLicenseUrl>
+    <Copyright>Copyright (c) 2019 Aliyun</Copyright>
+    <Version>1.0.1</Version>
     <PackageProjectUrl>https://github.com/VAllens/aliyun-openapi-sdk-net-core</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/VAllens/aliyun-openapi-sdk-net-core/master/logo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/VAllens/aliyun-openapi-sdk-net-core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aliyun openapi sdk</PackageTags>
     <PackageReleaseNotes>https://github.com/VAllens/aliyun-openapi-sdk-net-core/releases</PackageReleaseNotes>
-    <PackageId>Aliyun.Acs.Push.OpenApi2</PackageId>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -30,6 +30,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\aliyun-net-sdk-core\aliyun-net-sdk-core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
