@@ -2,10 +2,30 @@
 
 ## Requirements
 
-- 支持 .Net Core 1.0 及以上版本；
+- 仅支持 .NET Core 2.0 及以上版本(为推进新版本发展，停止支持 .NET Core 1.0、1.1版本)；
 - 下载SDK 把 `Aliyun.Acs.Core.dll` 和相应产品的 .dll 文件添加引用到项目中。
 
-## Example
+## Installation
+进入 [Alibaba Cloud SDK for .NET Nuget Package](https://www.nuget.org/profiles/aliyun-openapi-sdk) 页面，查看已发布的阿里云产品 SDK 模块列表。
+
+> **注意：** 部分阿里云产品的 SDK 未收录到这个列表中，例如对象存储（OSS），表格存储（Table Store），请前往这些产品的详情页获取相应的 SDK。
+
+使用ECS产品时，应安装 [ECS Nuget Package](https://www.nuget.org/packages/aliyun-net-sdk-ecs/)。
+如果要安装特定版本，请添加`--version`，否则它将安装此软件包的最新版本。
+
+您可以通过 NuGet 程序包管理器来安装：
+
+* 在 `解决方案资源管理器面板` 中右击您的项目选择 `管理 NuGet 程序包` 菜单，在打开的 `NuGet 管理面板` 中点击 `浏览` 选项卡输入 `aliyun-net-sdk`，在下方列表中选择 `Authors` 为 `Alibaba Cloud` 由官方发布的各产品模块，选择您期望的模块点击 **安装** 即可。
+
+或者通过 .NET CLI 工具来安装（以安装 ECS为例）
+
+    dotnet add package aliyun-net-sdk-ecs
+
+使用程序包管理器控制台
+
+    Install-Package aliyun-net-sdk-ecs
+
+## Examples
 
 ```csharp
 using Aliyun.Acs.Core;
